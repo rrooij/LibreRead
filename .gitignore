@@ -9,3 +9,4 @@
 
 # Project specific
 booklist/settings.py
+books/migrations
