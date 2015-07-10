@@ -6,7 +6,10 @@
 
 # For python
 *.pyc
+__pycache__
 
 # Project specific
 booklist/settings.py
 books/migrations
+
+
