@@ -1,7 +1,7 @@
 LibreRead
 ========
 
-LibreRead is a AGPLv3.0 licensed web applicationi made in Django
+LibreRead is a AGPLv3.0 licensed web application made in Django
 for managing book collections. This is still a work in progress,
 I'm not even sure if I will finish this.
 
