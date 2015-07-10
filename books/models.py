@@ -1,9 +1,12 @@
 from django.db import models
 
-
 class Country(models.Model):
     name = models.CharField(max_length=50)
     country_code = models.CharField(max_length=5)
+
+
+class Status(models.Model):
+    name = models.CharField(max_length=10)
 
 
 class Author(models.Model):
