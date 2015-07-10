@@ -1,0 +1,23 @@
+[
+{
+  "fields": {
+    "name": "To read"
+  },
+  "pk": 1,
+  "model": "books.status"
+},
+{
+  "fields": {
+    "name": "Read"
+  },
+  "pk": 2,
+  "model": "books.status"
+},
+{
+  "fields": {
+    "name": "Reading"
+  },
+  "pk": 3,
+  "model": "books.status"
+}
+]
