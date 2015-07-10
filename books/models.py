@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth import User
 
 
 class Country(models.Model):
@@ -36,3 +37,13 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class BookStatus(models.Model):
+    status = models.ForeignKey(Status)
+    book = models.ForeignKey(Book)
+
+
+class BookReader(models.Model):
+    user = models.OneToOneField(User)
+    books_status = models.ManyToManyField(BookStatus)
