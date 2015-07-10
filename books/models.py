@@ -1,12 +1,19 @@
 from django.db import models
 
+
 class Country(models.Model):
     name = models.CharField(max_length=50)
     country_code = models.CharField(max_length=5)
 
+    def __str__(self):
+        return self.name
+
 
 class Status(models.Model):
     name = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.name
 
 
 class Author(models.Model):
@@ -17,8 +24,15 @@ class Author(models.Model):
     birthplace = models.CharField(max_length=100)
     country = models.ForeignKey(Country)
 
+    def __str__(self):
+        return '{0} {1} {2}'.format(self.first_name,
+                                    self.middle_name, self.last_name)
+
 
 class Book(models.Model):
     author = models.ForeignKey(Author)
     title = models.CharField(max_length=200)
     pub_date = models.DateField('Publication date')
+
+    def __str__(self):
+        return self.title
