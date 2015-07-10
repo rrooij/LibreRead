@@ -1,0 +1,11 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# For python
+*.pyc
+
+# Project specific
+booklist/settings.py
