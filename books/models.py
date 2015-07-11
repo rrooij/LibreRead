@@ -54,3 +54,4 @@ class Review(models.Model):
     review_text = models.TextField()
     rating = models.IntegerField()
     reviewer = models.ForeignKey(BookReader)
+    book = models.ForeignKey(Book)
