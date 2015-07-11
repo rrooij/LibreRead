@@ -48,3 +48,9 @@ class BookReader(models.Model):
     user = models.OneToOneField(User)
     books_status = models.ManyToManyField(BookStatus)
     friends = models.ManyToManyField('self')
+
+
+class Review(models.Model):
+    review_text = models.TextField()
+    rating = models.IntegerField()
+    reviewer = models.ForeignKey(BookReader)
