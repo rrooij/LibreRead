@@ -42,11 +42,11 @@ class Book(models.Model):
 class BookStatus(models.Model):
     status = models.ForeignKey(Status)
     book = models.ForeignKey(Book)
+    book_reader = models.ForeignKey('BookReader')
 
 
 class BookReader(models.Model):
     user = models.OneToOneField(User)
-    books_status = models.ManyToManyField(BookStatus)
     friends = models.ManyToManyField('self')
 
 
