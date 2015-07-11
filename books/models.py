@@ -19,7 +19,7 @@ class Status(models.Model):
 
 class Author(models.Model):
     first_name = models.CharField(max_length=50)
-    middle_name = models.CharField(max_length=20)
+    middle_name = models.CharField(max_length=20, blank=True)
     last_name = models.CharField(max_length=100)
     date_of_birth = models.DateField('Date of birth')
     birthplace = models.CharField(max_length=100)
