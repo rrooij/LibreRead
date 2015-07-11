@@ -47,3 +47,4 @@ class BookStatus(models.Model):
 class BookReader(models.Model):
     user = models.OneToOneField(User)
     books_status = models.ManyToManyField(BookStatus)
+    friends = models.ManyToManyField('self')
