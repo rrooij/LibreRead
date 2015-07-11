@@ -9,7 +9,7 @@
 __pycache__
 
 # Project specific
-booklist/settings.py
+libreread/settings.py
 books/migrations
 
 
