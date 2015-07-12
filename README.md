@@ -25,6 +25,16 @@ The basic functionality that I'm aiming for is:
 * The ability for users to add books
 * Being able to rate books and write reviews
 
+Reason
+------
+
+There is no AGPLv3.0 web application for managing book collections, with social media features.
+My aim is to make a site like GoodReads, but without the corporate backing of Amazon and involving the
+community with the development.
+
+It's also a learning opportunity for me. This is my first time using Django, so don't be afraid to point
+me to mistakes I've made.
+
 License
 -------
 
