@@ -8,7 +8,7 @@ class UserForm(ModelForm):
         model = User
 
 
-class BookReader(ModelForm):
+class BookReaderForm(ModelForm):
     class Meta:
         model = BookReader
         excluse = ['user']
